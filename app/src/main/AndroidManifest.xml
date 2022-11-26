@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.accident">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Accident"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ViewUserAccount" />
+        <activity
+            android:name=".Sample"
+            android:label="@string/title_activity_sample"
+            android:theme="@style/Theme.Accident.NoActionBar" />
+        <activity android:name=".datemap" />
+        <activity android:name=".viewmap" />
+        <activity android:name=".Rootmap" />
+        <activity android:name=".UpdateStatus" />
+        <activity android:name=".costom2" />
+        <activity android:name=".ViewProfile" />
+        <activity android:name=".Costom4" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ManuallyAddAccident" />
+        <activity android:name=".ViewAccidentHistory" />
+        <activity android:name=".EmergencyViewNearestHospital" />
+        <activity android:name=".EmergencyHome" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDgIU-vobEtYg7_DAQccegc-WWFdx11F4w" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service android:name=".LocationService" />
+        <service android:name=".LocationServiceno" />
+        <service android:name=".LocationService1" />
+
+        <activity android:name=".ViewHospital" />
+        <activity android:name=".ViewNews" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".SetEmergencyNumber" />
+        <activity android:name=".Registration" />
+        <activity android:name=".Home" />
+        <activity android:name=".SetIp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

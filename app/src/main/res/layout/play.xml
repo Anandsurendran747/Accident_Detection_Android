@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:gravity="center|start"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginLeft="7dp"
+        android:paddingTop="10dp"/>
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        android:background="@drawable/play_main"
+        android:padding="7dp"
+
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is Node.js ? What does it do ? Why using Node.js ?"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:23"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
