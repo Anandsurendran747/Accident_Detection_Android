@@ -51,7 +51,7 @@ public class LocationServiceno extends Service {
 	    private Boolean locationChanged;
 	    
 	    private Handler handler = new Handler();
-	    public static Location curLocation;
+	    public static Location curLocation=null;
 	    public static boolean isService = true;
 	    private File root;
 	    private ArrayList<String> fileList = new ArrayList<String>();

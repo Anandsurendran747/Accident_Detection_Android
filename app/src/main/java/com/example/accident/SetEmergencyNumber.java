@@ -43,8 +43,8 @@ public class SetEmergencyNumber extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String number = e1.getText().toString();
-                final String name = e2.getText().toString();
+                final String name = e1.getText().toString();
+                final String number = e2.getText().toString();
                 if (number.equals("")) {
                     e1.setError("Type Name");
                 }

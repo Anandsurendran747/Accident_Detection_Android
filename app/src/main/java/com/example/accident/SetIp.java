@@ -90,7 +90,7 @@ public class SetIp extends AppCompatActivity {
             if (type.equalsIgnoreCase("user")){
                 Intent in = new Intent(getApplicationContext(), LocationService.class);
                 startService(in);
-                Intent in1 = new Intent(getApplicationContext(), LocationServiceno.class);
+                Intent in1 = new Intent(getApplicationContext(), LocationService1.class);
                 startService(in1);
                 Intent i = new Intent(SetIp.this, Home.class);
                 i.putExtra("date","na");
@@ -98,7 +98,7 @@ public class SetIp extends AppCompatActivity {
             }else{
                 Intent in = new Intent(getApplicationContext(), LocationService1.class);
                 startService(in);
-                Intent in1 = new Intent(getApplicationContext(), LocationServiceno.class);
+                Intent in1 = new Intent(getApplicationContext(), LocationService1.class);
                 startService(in1);
                 Intent ik = new Intent(getApplicationContext(), EmergencyHome.class);
                 ik.putExtra("date","na");
